@@ -28,17 +28,17 @@ border-radius: 4px;
   color
   var(--transition-timing-function),
   scale var(--transition-timing-function);
+
+ &:hover,
+&:focus {
+    color: var(--text-color-blue);
+    border-color: var(--text-color-blue);
+    transform: scale(1.05);
+}
 }
 
 .customers__icon {
     fill: currentColor;
-}
-
-.customers__link:hover,
-.customers__link:focus {
-    color: var(--text-color-blue);
-    border-color: var(--text-color-blue);
-    transform: scale(1.05);
 }
 
 .customers__list .customers__item + .customers__item {

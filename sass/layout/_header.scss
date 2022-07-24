@@ -19,6 +19,10 @@ transition: color
     position: relative;
 }
 
+.current {
+    color: var(--text-color-blue);
+}
+
 .nav-list__link.current::after {
     content:'';
     position: absolute;
@@ -51,19 +55,24 @@ align-items: center;
     margin-right: 10px;
       }
 
-/* Зміна кольору при наведенні та зміні фокусу */
-.nav-list a:hover,
-.contact-list a:hover,
-.nav-list a:focus,
-.contact-list a:focus,
-.footer-adress__link:hover,
-.footer-adress__link:focus {
+.nav-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+&:hover, &:focus {
     color: var(--text-color-blue);
-  }
+}    
+}
 
-  .footer-adress__link--white {
-    color: var(--color-white);
-  }
+.contact-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+
+&:hover, &:focus {
+    color: var(--text-color-blue);
+}
+}
 
 /* Налаштування main-nav */
 .header-container {
@@ -88,11 +97,7 @@ align-items: center;
         
 }
 
-.nav-list__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-    }
+
 
 /* Налаштування контактів header */
 .contact-list {
@@ -105,10 +110,6 @@ align-items: center;
     margin-left: 50px;   
 }
 
-.contact-list__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: flex;
-}
+
 
 

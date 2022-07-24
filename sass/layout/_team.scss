@@ -3,7 +3,7 @@
     background-color: var(--color-grey);
     text-align: center;
  }
-.team_title {
+.team__title {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
@@ -11,25 +11,25 @@ text-align: center;
 letter-spacing: 0.03em;
 margin-bottom: 50px;
 }
-.team_item {
+.team__item {
    display: block;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
-.team_list {
+.team__list {
     display: flex;
   }
-.team_list .team_item + .team_item {
+.team__list .team__item + .team__item {
     margin-left: 30px;
 }
-.team_name {
+.team__name {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
  margin-bottom: 10px;
 }
-.team_spec {
+.team__spec {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
@@ -37,17 +37,17 @@ letter-spacing: 0.03em;
 color: var(--text-color-grey);
 margin-bottom: 16px;
 }
-.team_item {
+.team__item {
     background-color: var(--color-white);
     text-align: center;
 }
 
 
-.team_card {
+.team__card {
 padding-top: 30px;
 padding-bottom: 30px;
 }
-.icons-set_icon {
+.icons-set__icon {
        width: 20px;
     height: 20px;
     fill: currentColor;
@@ -63,7 +63,7 @@ padding-bottom: 30px;
     margin-left: 10px;
 }
 
- .icons-set_link {
+ .icons-set__link {
      height: 44px;
     width: 44px;
     display: flex;
@@ -76,10 +76,11 @@ padding-bottom: 30px;
   var(--transition-timing-function),
   color
   var(--transition-timing-function);
-}
 
-.icons-set_link:hover,
-.icons-set_link:focus {
+&:hover,&:focus {
     color: var(--color-white);
     background-color: var(--text-color-blue);
  }
+}
+
+

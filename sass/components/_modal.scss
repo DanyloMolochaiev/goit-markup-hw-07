@@ -53,6 +53,10 @@
   transition: background-color var(--transition-timing-function-close),
   color var(--transition-timing-function-close),
   transform var(--transition-timing-function-close),  border var(--transition-timing-function-close);
+
+ &:hover{
+  color: var(--color-hover-button);
+}
 }
 
 .modal__button-icon {
@@ -60,11 +64,6 @@
     height: 11px;
     fill: currentColor;
   }
-
-.modal__button:hover{
-  color: var(--color-hover-button);
-}
-
 
 .register-form__user {
   display: flex;
@@ -189,9 +188,8 @@ position: absolute;
   position: relative;
   color: var(--text-color-blue);
   margin-left: 6px;
-}
 
-.register-from__checkbox-link::after{
+&::after{
   content: '';
   position: absolute;
   display: block;   
@@ -200,6 +198,7 @@ position: absolute;
   left: 0;
   bottom: -10;
   background-color: currentColor;
+}
 }
 
 .coments{
@@ -223,7 +222,14 @@ position: absolute;
   transition: background-color
   var(--transition-timing-function),
   box-shadow
-  var(--transition-timing-function)
+  var(--transition-timing-function);
+
+&:hover,
+&:focus {
+  background-color: var(--color-hover-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
 }
 
 .modal__btn-submit--text{
@@ -233,11 +239,5 @@ position: absolute;
   letter-spacing: 0.06em;
 }
 
-.modal__btn-submit:hover,
-.modal__btn-submit:focus {
-  background-color: var(--color-hover-button);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
 
 

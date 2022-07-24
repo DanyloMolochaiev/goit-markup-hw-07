@@ -20,6 +20,10 @@ letter-spacing: 0.03em;
 color: var(--text-color-footer);
 transition: color
   var(--transition-timing-function);
+
+&:hover,&:focus {
+    color: var(--text-color-blue);
+  }
 }
 
  .footer-adress__link--white {
@@ -31,7 +35,7 @@ transition: color
 .footer-adress__list {
     margin-top: 20px;
  }
-.footer-adress__list .footer-adress__item:not(:last-child) {
+.footer-adress__item:not(:last-child) {
     margin-bottom: 9px;
 }
 .footer .logo {
@@ -67,6 +71,12 @@ margin-bottom: 20px;
       background-color: rgba(255, 255, 255, 0.1);
       transition: background-color
   var(--transition-timing-function);
+
+  &:hover,
+&:focus {
+    background-color: var(--text-color-blue);
+    color: var(--color-white);
+} 
 }
 
 .footer-icons__icon {
@@ -75,11 +85,7 @@ margin-bottom: 20px;
     fill: currentColor;
   }
 
-.footer-icons__link:hover,
-.footer-icons__link:focus {
-    background-color: var(--text-color-blue);
-    color: var(--color-white);
-} 
+
 
 
 /* Налашьування форми subscribe */
@@ -117,17 +123,18 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
   background-color: var(--color-dark);
   transform: var(--transition-timing-function);
-}
 
-.footer-subscribe__input:hover,
-.footer-subscribe__input:focus {
+&:hover,
+&:focus {
   border-color: var(--text-color-blue);
   outline: 0;
-}
-
-.footer-subscribe__input:not(:placeholder-shown ){
+};
+&:not(:placeholder-shown ){
   border-color: var(  --color-subscribe-input);
 }
+}
+
+
 
 
 .subscribe-button{
@@ -138,12 +145,13 @@ border-radius: 4px;
   height: 50px;
   padding: 0;
   margin-left: 12px;
-}
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+ &:hover,
+&:focus {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+}
+
 
 .subscribe-button__text{
 margin-right: 10px;
@@ -159,4 +167,8 @@ color: var(--color-white);
 
 .subscribe-button__icon {
      fill: currentColor;
+  }
+
+  .footer-adress__link--white {
+    color: var(--color-white);
   }
